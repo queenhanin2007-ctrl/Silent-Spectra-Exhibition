@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض لوحة "جرح الوداعة والخداع"</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Cairo & Amiri for poetic Arabic typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBlack: '#0d0d0d',
+                        darkRed: '#4a0e17',
+                        crimsonGlow: '#8b0000',
+                        goldStar: '#c5a059',
+                        softGray: '#d1d5db'
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        amiri: ['Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .poetic-text {
+            font-family: 'Amiri', serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.05); }
+        }
+        .glow-bg {
+            animation: pulseGlow 8s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-[#0d0d0d] text-gray-200 min-h-screen relative selection:bg-red-950 selection:text-white">
+
+    <div class="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-red-950/30 via-black to-transparent pointer-events-none glow-bg"></div>
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0d0d0d]/90 border-b border-red-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-red-950 to-red-800 flex items-center justify-center shadow-lg shadow-black">
+                    <i class="fa-solid fa-heart-crack text-amber-200 text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg sm:text-xl tracking-wide bg-gradient-to-r from-amber-200 via-rose-300 to-red-400 bg-clip-text text-transparent">معرض الأطياف الصامتة</h1>
+                    <p class="text-xs text-gray-400">لوحة جرح الحب والخداع</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-medium">
+                <a href="#artwork" class="hover:text-amber-300 transition-colors">اللوحة الفنية</a>
+                <a href="#story" class="hover:text-amber-300 transition-colors">فلسفة الرمزية</a>
+                <a href="#notes" class="hover:text-amber-300 transition-colors">ركن البوح</a>
+            </nav>
+            <div>
+                <a href="#notes" class="bg-gradient-to-r from-red-900 to-red-800 hover:from-red-800 hover:to-red-700 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg transition-all transform hover:scale-105">
+                    <i class="fa-solid fa-pen-nib ml-2"></i>اكتب خاطرتك
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+            <div class="inline-flex items-center space-x-2 space-x-reverse bg-red-950/40 border border-red-900/30 px-4 py-1.5 rounded-full text-xs sm:text-sm text-red-200 mb-6 shadow-inner">
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <span>تعبير سريالي عميق عن خيبة الأمل، وكسر الروح، والوداعة التي قوبلت بالخداع</span>
+            </div>
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 poetic-text leading-tight">
+                حين تصرخ <span class="bg-gradient-to-r from-amber-200 via-rose-300 to-red-500 bg-clip-text text-transparent">الوداعة الصامتة</span> في وجه الخداع
+            </h2>
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-300 font-light leading-relaxed mb-10">
+                لوحة رقمية أصلية تدمج الرمزية النفسية العميقة بلمسات فنية تشبه عوالم فان كوخ الحزينة، تروي قصة قلب أعطى بصدق فتلقى شظايا المرآة المكسورة.
+            </p>
+        </section>
+
+        <section id="artwork" class="py-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="relative bg-gradient-to-b from-[#161616] to-[#0d0d0d] p-4 sm:p-8 rounded-3xl border border-red-950 shadow-2xl backdrop-blur-sm">
+                <div class="absolute -top-3 right-8 bg-amber-500 text-stone-950 text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                    <i class="fa-solid fa-gem ml-1"></i> العمل الفني الرقمي
+                </div>
+                
+              <img src="art.jpeg" 
+     alt="لوحة جرح الحب والخداع والوداعة" 
+     onerror="this.src='https://placehold.co/1200x700/111111/c5a059?text=Artwork+Image+Missing'"
+     class="w-full h-auto object-contain max-h-[600px] mx-auto block">
+
+                <!-- Quick highlights bar -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-red-950/40 text-center">
+                    <div class="p-3 bg-black/40 rounded-xl border border-red-950/30">
+                        <i class="fa-solid fa-tornado text-amber-400 text-lg mb-1"></i>
+                        <h4 class="text-sm font-semibold text-rose-200">الدوامة السريالية</h4>
+                        <p class="text-xs text-gray-400">تشتت الأفكار والفوضى الذهنية</p>
+                    </div>
+                    <div class="p-3 bg-black/40 rounded-xl border border-red-950/30">
+                        <i class="fa-solid fa-heart-pulse text-red-500 text-lg mb-1"></i>
+                        <h4 class="text-sm font-semibold text-rose-200">القلب النابض</h4>
+                        <p class="text-xs text-gray-400">حب مخلص رغم ألم الخداع</p>
+                    </div>
+                    <div class="p-3 bg-black/40 rounded-xl border border-red-950/30">
+                        <i class="fa-solid fa-mirror text-amber-300 text-lg mb-1"></i>
+                        <h4 class="text-sm font-semibold text-rose-200">المرآة المكسورة</h4>
+                        <p class="text-xs text-gray-400">تناثر الذكريات وخيال الغياب</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-4xl font-bold poetic-text mb-3">فلسفة وعناصر اللوحة التفصيلية</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-red-800 to-amber-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-[#161616] border border-red-950/60 p-6 sm:p-8 rounded-3xl shadow-xl">
+                    <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center text-amber-300 text-xl mb-4">
+                        <i class="fa-solid fa-female"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-rose-200 mb-3">الشخصية المركزية (المرأة الجالسة)</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        تجلس بوضعية توحي بالانكسار على سجادة قديمة، بينما استُعيض عن رأسها بدوامة سريالية تعبر عن الفوضى الذهنية وتشتت الأفكار. يظهر قلبها النابض خارج صدرها كدليل على الحب المخلص رغم الألم.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#161616] border border-red-950/60 p-6 sm:p-8 rounded-3xl shadow-xl">
+                    <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center text-amber-300 text-xl mb-4">
+                        <i class="fa-solid fa-heart-crack"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-rose-200 mb-3">المرآة المكسورة والإنعكاس</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        تحمل مرآة محطمة تعكس تناثر الذكريات، ويظهر داخلها خيال رجل بعيد يحمل وردة حمراء، رمزاً للغياب والفراق والخداع الذي دمر كل شيء جميل.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#161616] border border-red-950/60 p-6 sm:p-8 rounded-3xl shadow-xl">
+                    <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center text-amber-300 text-xl mb-4">
+                        <i class="fa-solid fa-feather"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-rose-200 mb-3">كلمة "الوداعة" في الخلفية</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        مكتوبة بخط عربي فني على الجدار المتهالك، لتجسد السلام الداخلي والنقاء المفرط الذي قابلت به صاحبة القلب الطيب قسوة الواقع وصدمة الخداع.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#161616] border border-red-950/60 p-6 sm:p-8 rounded-3xl shadow-xl">
+                    <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center text-amber-300 text-xl mb-4">
+                        <i class="fa-solid fa-candle-holder"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-rose-200 mb-3">المحيط والعناصر المتناثرة</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        تشمل الجدران المتهدمة، والشمعدان المضيء كأمل خافت، والإناء الزجاجي المحطم، والورود الذابلة التي تعكس نهاية العلاقة المؤلمة ومرارة الذكريات.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" class="py-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+            <div class="bg-gradient-to-b from-[#161616] to-[#0d0d0d] border border-red-950 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="text-center mb-8">
+                    <span class="text-amber-400 text-sm font-semibold tracking-wider uppercase mb-1 block">ركن البوح والخواطر</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold poetic-text text-rose-100">اكتبِ خاطرتك أو رسالة للذكرى</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-2">اتركِ كلمات تعبر عن مشاعرك تجاه هذه اللوحة وتجربة الخداع والوداعة.</p>
+                </div>
+
+                <form id="loveNoteForm" onsubmit="handleNoteSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-medium text-rose-200 mb-1">اسمك أو توقيعك</label>
+                        <input type="text" id="senderName" required placeholder="اكتب اسمًا أو لقبًا..." 
+                               class="w-full bg-black/60 border border-red-950 rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-amber-400 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-rose-200 mb-1">رسالتك أو خاطرتك</label>
+                        <textarea id="noteContent" rows="4" required placeholder="اكتبِ هنا ما تشعرين به... طيبة القلب ليست ضعفاً، بل نقاء يحasاس."
+                                  class="w-full bg-black/60 border border-red-950 rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-amber-400 transition-colors resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-red-900 to-red-700 hover:from-red-800 hover:to-red-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane ml-2"></i> حفظ الخاطرة في المعرض
+                    </button>
+                </form>
+
+                <!-- Saved Notes Container -->
+                <div id="notesContainer" class="mt-8 pt-8 border-t border-red-950/60 space-y-4">
+                    <h4 class="text-sm font-bold text-amber-200 mb-4 flex items-center">
+                        <i class="fa-solid fa-book-open ml-2"></i> رسائل البوح المسجلة:
+                    </h4>
+                    
+                    <div class="bg-black/40 border border-red-950/40 rounded-2xl p-4 text-sm relative">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-bold text-amber-300 text-xs"><i class="fa-solid fa-heart text-red-700 ml-1"></i> طيف حزين</span>
+                            <span class="text-[10px] text-gray-500">اليوم</span>
+                        </div>
+                        <p class="poetic-text text-gray-200 text-base">"أعطيتهم بصدق ووداعة، فكان الجزاء شظايا مرآة مكسورة.. ولكن الروح الباقية أقوى من أي خداع."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t border-red-950/40 py-10 mt-16 text-center text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="poetic-text text-base text-amber-200">"الوداعة ليست ضعفاً، بل هي عظمة قلب يحب بصدق وسط عالم مخادع."</p>
+            <p>صُمم هذا المعرض الرقمي خصيصاً ليخلد لوحة "جرح الحب والخداع".</p>
+            <p class="pt-2 text-[10px] text-gray-500">© 2026 - جميع الحقوق محفوظة</p>
+            <p class="poetic-text text-base text-amber-200">"Design by Hanin"</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleNoteSubmit(event) {
+            event.preventDefault();
+            const nameInput = document.getElementById('senderName');
+            const contentInput = document.getElementById('noteContent');
+            const container = document.getElementById('notesContainer');
+
+            if (!nameInput.value.trim() || !contentInput.value.trim()) return;
+
+            const noteCard = document.createElement('div');
+            noteCard.className = 'bg-black/40 border border-red-950/40 rounded-2xl p-4 text-sm transform transition-all';
+            noteCard.innerHTML = `
+                <div class="flex justify-between items-center mb-2">
+                    <span class="font-bold text-amber-300 text-xs"><i class="fa-solid fa-heart text-red-700 ml-1"></i> ${escapeHTML(nameInput.value)}</span>
+                    <span class="text-[10px] text-gray-500">الآن</span>
+                </div>
+                <p class="poetic-text text-gray-200 text-base">${escapeHTML(contentInput.value)}</p>
+            `;
+
+            container.insertBefore(noteCard, container.children[1]);
+
+            nameInput.value = '';
+            contentInput.value = '';
+        }
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+            );
+        }
+    </script>
+</body>
+</html>
